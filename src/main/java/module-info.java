@@ -11,6 +11,8 @@ module org.example.fruits_market_app {
     requires eu.hansolo.tilesfx;
     requires com.almasb.fxgl.all;
 
-    opens org.example.fruits_market_app to javafx.fxml;
-    exports org.example.fruits_market_app;
+    exports org.example.fruits_market_app.Controller;
+    opens org.example.fruits_market_app.Controller to javafx.fxml;
+    exports org.example.fruits_market_app.main;
+    opens org.example.fruits_market_app.main to javafx.fxml;
 }

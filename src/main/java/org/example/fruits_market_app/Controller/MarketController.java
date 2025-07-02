@@ -1,9 +1,9 @@
-package org.example.fruits_market_app;
+package org.example.fruits_market_app.Controller;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 
-public class HelloController {
+public class MarketController {
     @FXML
     private Label welcomeText;
 

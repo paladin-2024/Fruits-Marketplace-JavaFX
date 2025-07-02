@@ -133,7 +133,7 @@
                         <!-- Default configuration for running with: mvn clean javafx:run -->
                         <id>default-cli</id>
                         <configuration>
-                            <mainClass>org.example.fruits_market_app/org.example.fruits_market_app.HelloApplication
+                            <mainClass>org.example.fruits_market_app/org.example.fruits_market_app.main.Main
                             </mainClass>
                             <launcher>app</launcher>
                             <jlinkZipName>app</jlinkZipName>
