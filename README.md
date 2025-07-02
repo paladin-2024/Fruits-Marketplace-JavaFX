@@ -57,7 +57,7 @@ We're cultivating an open space for elegant code and design. Contributions welco
 
 ## 📜 License
 
-Licensed under [MIT License](LICENSE) — free to use, enhance, and replant 🍋.
+Licensed under [MIT License](License) — free to use, enhance, and replant 🍋.
 
 ---
 
