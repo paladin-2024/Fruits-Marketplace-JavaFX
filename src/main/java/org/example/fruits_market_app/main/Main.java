@@ -12,7 +12,7 @@ import java.util.Objects;
 public class Main extends Application {
     @Override
     public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource(".../resources/views/market.fxml")));
+        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/views/market.fxml")));
         stage.setTitle("FruityMart");
         stage.setScene(new Scene(root));
         stage.show();
