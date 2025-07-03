@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="810.0" prefWidth="1315.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="810.0" prefWidth="1315.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.fruits_market_app.Controller.MarketController">
    <children>
       <BorderPane prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <left>
@@ -49,14 +49,14 @@
                      </styleClass>
                   </HBox>
                   <Pane prefHeight="57.0" prefWidth="435.0" VBox.vgrow="ALWAYS" />
-                  <VBox alignment="CENTER" prefHeight="535.0" prefWidth="100.0" styleClass="chosen-fruit-card" stylesheets="@../values/style.css">
+                  <VBox fx:id="chosenFruitCard" alignment="CENTER" prefHeight="535.0" prefWidth="100.0" styleClass="chosen-fruit-card" stylesheets="@../values/style.css">
                      <VBox.margin>
                         <Insets left="50.0" right="50.0" />
                      </VBox.margin>
                      <children>
                         <HBox prefHeight="55.0" prefWidth="200.0">
                            <children>
-                              <Label prefHeight="57.0" prefWidth="171.0" text="Peach" textFill="WHITE">
+                              <Label fx:id="FruitNameLabel" prefHeight="57.0" prefWidth="171.0" text="Peach" textFill="WHITE">
                                  <font>
                                     <Font name="JetBrains Mono Medium" size="36.0" />
                                  </font>
@@ -64,7 +64,7 @@
                                     <Insets left="20.0" />
                                  </HBox.margin>
                               </Label>
-                              <Label prefHeight="57.0" prefWidth="171.0" text="\$2.99" textFill="WHITE">
+                              <Label fx:id="fruitPriceLabel" prefHeight="57.0" prefWidth="171.0" text="\$2.99" textFill="WHITE">
                                  <font>
                                     <Font name="JetBrains Mono Medium" size="36.0" />
                                  </font>
@@ -74,7 +74,7 @@
                               <Insets top="30.0" />
                            </VBox.margin>
                         </HBox>
-                        <ImageView fitHeight="170.0" fitWidth="285.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fx:id="fruitImg" fitHeight="170.0" fitWidth="285.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../img/peach.png" />
                            </image>

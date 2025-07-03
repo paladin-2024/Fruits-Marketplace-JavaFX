@@ -10,6 +10,7 @@ module org.example.fruits_market_app {
     requires org.kordamp.bootstrapfx.core;
     requires eu.hansolo.tilesfx;
     requires com.almasb.fxgl.all;
+    requires java.desktop;
 
     exports org.example.fruits_market_app.Controller;
     opens org.example.fruits_market_app.Controller to javafx.fxml;
