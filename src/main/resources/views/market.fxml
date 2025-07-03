@@ -181,7 +181,7 @@
                   </HBox>
                   <HBox prefHeight="100.0" prefWidth="200.0">
                      <children>
-                        <Pane prefHeight="200.0" prefWidth="80.0" HBox.hgrow="ALWAYS" />
+                        <Pane prefHeight="84.0" prefWidth="96.0" HBox.hgrow="ALWAYS" />
                         <HBox alignment="CENTER" prefHeight="105.0" prefWidth="370.0" styleClass="free-delivery-card" stylesheets="@../values/style.css">
                            <children>
                               <VBox alignment="CENTER" prefHeight="100.0" prefWidth="230.0">
@@ -204,13 +204,13 @@
                                     </Label>
                                  </children>
                               </VBox>
-                              <ImageView fitHeight="68.0" fitWidth="69.0" pickOnBounds="true" preserveRatio="true">
+                              <ImageView fitHeight="49.0" fitWidth="56.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
                                     <Image url="@../img/ic_delivery.png" />
                                  </image></ImageView>
                            </children>
                         </HBox>
-                        <Pane prefHeight="200.0" prefWidth="80.0" HBox.hgrow="ALWAYS" />
+                        <Pane prefHeight="84.0" prefWidth="96.0" HBox.hgrow="ALWAYS" />
                         <HBox alignment="CENTER" prefHeight="105.0" prefWidth="370.0" styleClass="shopping-online-card" stylesheets="@../values/style.css">
                            <children>
                               <VBox alignment="CENTER" prefHeight="100.0" prefWidth="230.0">
@@ -233,17 +233,26 @@
                                     </Label>
                                  </children>
                               </VBox>
-                              <ImageView fitHeight="68.0" fitWidth="69.0" pickOnBounds="true" preserveRatio="true">
+                              <ImageView fitHeight="49.0" fitWidth="56.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
                                     <Image url="@../img/ic_stopwatch.png" />
                                  </image></ImageView>
                            </children>
                         </HBox>
-                        <Pane prefHeight="200.0" prefWidth="80.0" HBox.hgrow="ALWAYS" />
+                        <Pane prefHeight="84.0" prefWidth="96.0" HBox.hgrow="ALWAYS" />
                      </children>
                      <VBox.margin>
                         <Insets left="20.0" right="20.0" top="10.0" />
                      </VBox.margin></HBox>
+                  <HBox alignment="CENTER" prefHeight="634.0" prefWidth="200.0">
+                     <children>
+                        <ScrollPane prefHeight="200.0" prefWidth="200.0">
+                          <content>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0" />
+                          </content>
+                        </ScrollPane>
+                     </children>
+                  </HBox>
                </children>
             </VBox>
          </center></BorderPane>
