@@ -172,13 +172,78 @@
                               <Insets />
                            </HBox.margin>
                         </Label>
-                        <ImageView fitHeight="50.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="45.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../img/ic_cart.png" />
                            </image>
                         </ImageView>
                      </children>
                   </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Pane prefHeight="200.0" prefWidth="80.0" HBox.hgrow="ALWAYS" />
+                        <HBox alignment="CENTER" prefHeight="105.0" prefWidth="370.0" styleClass="free-delivery-card" stylesheets="@../values/style.css">
+                           <children>
+                              <VBox alignment="CENTER" prefHeight="100.0" prefWidth="230.0">
+                                 <children>
+                                    <Label prefHeight="29.0" prefWidth="180.0" text="Free delivery" textFill="#878787">
+                                       <font>
+                                          <Font name="DejaVu Serif Bold" size="16.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label prefHeight="29.0" prefWidth="180.0" text="over $20 order" textFill="#878787">
+                                       <font>
+                                          <Font name="JetBrains Mono Medium regular" size="12.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                              <ImageView fitHeight="68.0" fitWidth="69.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/ic_delivery.png" />
+                                 </image></ImageView>
+                           </children>
+                        </HBox>
+                        <Pane prefHeight="200.0" prefWidth="80.0" HBox.hgrow="ALWAYS" />
+                        <HBox alignment="CENTER" prefHeight="105.0" prefWidth="370.0" styleClass="shopping-online-card" stylesheets="@../values/style.css">
+                           <children>
+                              <VBox alignment="CENTER" prefHeight="100.0" prefWidth="230.0">
+                                 <children>
+                                    <Label prefHeight="29.0" prefWidth="180.0" text="Shopping Online" textFill="#878787">
+                                       <font>
+                                          <Font name="DejaVu Serif Bold" size="16.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label prefHeight="29.0" prefWidth="200.0" text="get your shopping in the same day" textFill="#878787">
+                                       <font>
+                                          <Font name="JetBrains Mono Medium regular" size="12.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                              <ImageView fitHeight="68.0" fitWidth="69.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/ic_stopwatch.png" />
+                                 </image></ImageView>
+                           </children>
+                        </HBox>
+                        <Pane prefHeight="200.0" prefWidth="80.0" HBox.hgrow="ALWAYS" />
+                     </children>
+                     <VBox.margin>
+                        <Insets left="20.0" right="20.0" top="10.0" />
+                     </VBox.margin></HBox>
                </children>
             </VBox>
          </center></BorderPane>
