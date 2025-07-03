@@ -10,6 +10,7 @@ import java.io.IOException;
 import java.util.Objects;
 
 public class Main extends Application {
+    public static final String CURRENCY = "$";
     @Override
     public void start(Stage stage) throws Exception {
         Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/views/market.fxml")));

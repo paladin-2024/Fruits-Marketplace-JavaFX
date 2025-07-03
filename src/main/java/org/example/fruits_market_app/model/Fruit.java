@@ -6,12 +6,12 @@ public class Fruit {
     private String imageSrc;
     private String color;
 
-    public Fruit(String name, double price, String imageSrc) {
+    public Fruit(String name, double price, String imageSrc, String color) {
         this.name = name;
         this.price = price;
         this.imageSrc = imageSrc;
+        this.color = color;
     }
-
     public String getName() {
         return name;
     }
