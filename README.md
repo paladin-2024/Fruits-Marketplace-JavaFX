@@ -14,19 +14,19 @@ FruityMart is a sleek and interactive desktop application built with **JavaFX** 
 - 🔍 **Search bar** for smooth product filtering
 - 🍑 **Product showcase panel** with quantity controls, previews, and add-to-cart logic
 - 🧱 **Reusable fruit item cards** with bound data from controller
-- 🧭 **FXML + Controller binding** (e.g. `ItemController.java`) for dynamic UI loading
-- ⚙️ Modular app structure with Java module support via `module-info.java`
+- 🔄 **Dynamic FXML loading** (e.g. `ItemController.java`) for modular item injection
+- ⚙️ **Java modular structure** supported via `module-info.java`
 
 ---
 
-## 🧱 Component Architecture
+## 🧱 Component Overview
 
 ```
-market.fxml            → Main layout, language switcher, account, delivery banners
-Item.fxml              → Reusable card for product name, price, image (Cherry, Apple, etc.)
-MarketController.java  → Binds UI events (search, navigation, etc.)
-ItemController.java    → Binds dynamic card data (name, price, image) via @FXML
-style.css              → Unified styling: cards, shadows, color palette
+market.fxml            → Main layout, language switcher, account, delivery banners  
+item.fxml              → Reusable card for product name, price, image (Kiwi, Cherry, etc.)  
+MarketController.java  → Populates fruit grid, sets selection styling  
+ItemController.java    → Binds dynamic card data (name, price, image) via @FXML  
+style.css              → Unified styling: cards, layout, color palette  
 ```
 
 ---
@@ -40,13 +40,16 @@ fruits_market_app/
 │   └── ItemController.java
 ├── main/
 │   └── Main.java
+├── model/
+│   └── Fruit.java
 ├── resources/
 │   ├── views/
 │   │   ├── market.fxml
-│   │   └── Item.fxml
+│   │   └── item.fxml
 │   ├── values/
 │   │   └── style.css
 │   └── img/
+│       ├── kiwi.png
 │       ├── cherry.png
 │       ├── peach.png
 │       ├── ic_cart.png
@@ -59,25 +62,28 @@ fruits_market_app/
 
 ## 🛠️ Tech Stack
 
-- [JavaFX 17](https://openjfx.io/) – for elegant GUI frameworking
-- FXML – UI declarative markup for view separation
-- Java 17 – modular application base
-- CSS – custom stylings for elevation and branding
-- IntelliJ IDEA or CLion – preferred environments for JavaFX and modular Java projects
+- [JavaFX 17](https://openjfx.io/) – modern GUI framework
+- FXML – XML-based UI layout
+- Java 17 – modular application support
+- CSS – responsive, custom styling
+- IntelliJ IDEA / CLion – recommended development environments
 
 ---
 
 ## 💼 Powered by NURO
 
-This project is part of **NURO** — a creative suite envisioned by Nzabanita focused on building futuristic, minimalist digital experiences with style and precision.
+This project is part of **NURO** — a creative suite by Nzabanita focused on building futuristic, minimalist digital experiences with style and precision.
 
 > ✨ NURO blends elegant branding with functional software design.
 
 ---
 
-## 📸 Preview (Coming Soon!)
+## 📸 Preview
 
-> GIFs and static screens will be added soon to showcase Cherry item cards, promotional panels, and scrollable product views.
+> _Design showcase coming soon!_
+
+<!-- Uncomment this line when preview image is added -->
+<!-- ![FruityMart Preview](resources/img/screen1.png) -->
 
 ---
 
@@ -85,7 +91,7 @@ This project is part of **NURO** — a creative suite envisioned by Nzabanita fo
 
 1. Clone this repo to your machine
 2. Open in IntelliJ or CLion with JavaFX + Java 17 SDK configured
-3. Make sure `/resources` is set as your Resources Root
+3. Set `/resources` as your Resources Root
 4. Run `Main.java`
 5. Enjoy the FruityMart experience 🍊
 
@@ -93,21 +99,21 @@ This project is part of **NURO** — a creative suite envisioned by Nzabanita fo
 
 ## 🤝 Contributing
 
-Feel free to fork, branch, or build on top of the FruityMart foundation. Whether you're improving visuals, extending the logic, or porting new fruits—your creativity is welcome 🍓
+Feel free to fork, branch, or build on top of the FruityMart foundation. Whether you're improving visuals, extending logic, or porting new fruits—your creativity is welcome 🍓
 
 ---
 
 ## 📜 License
 
-Licensed under [MIT License](LICENSE) — free to use, enhance, and replant 🍋.
+Licensed under the [MIT License](LICENSE) — free to use, enhance, and replant 🍋
 
 ---
 
 ## 👤 Author
 
 **Nzabanita**  
-Creative engineer, DevOps dreamer, visual storyteller  
+Creative engineer · DevOps dreamer · Visual storyteller  
 Crafting FruityMart and NURO from Kampala with ☕ & imagination  
-Reach me at: *coming soon!*
+🌍 Coming soon: portfolio & links
 
 ---

@@ -12,7 +12,6 @@ import javafx.scene.layout.GridPane;
 import javafx.scene.layout.Region;
 import javafx.scene.layout.VBox;
 import org.example.fruits_market_app.model.Fruit;
-
 import java.io.IOException;
 import java.net.URL;
 import java.util.ArrayList;
@@ -48,6 +47,8 @@ public class MarketController implements Initializable {
         }
         return fruits;
     }
+
+
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
