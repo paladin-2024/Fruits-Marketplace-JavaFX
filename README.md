@@ -1,37 +1,54 @@
 # 🍇 FruityMart – A Delightful JavaFX Fruit Market Experience
 _Part of the **NURO** creative suite by Nzabanita_
 
-FruityMart is a sleek and interactive desktop application built with **JavaFX** and styled using **custom CSS**, offering a beautifully minimal interface to explore and purchase fresh fruits. From its clean, scrollable product grid to modern delivery panels and reusable item components, FruityMart blends functionality with elegance under the NURO design philosophy.
+FruityMart is a sleek and interactive desktop application built with **JavaFX** and styled using **custom CSS**, offering a beautifully minimal interface to explore and purchase fresh fruits. With a dynamic product catalog, vibrant UI theming, and modular MVC components, FruityMart blends functionality with elegance under the NURO design philosophy.
 
 ---
 
 ## 🚀 Features
 
-- 💡 **JavaFX-powered UI** for responsive, native-like application flow
-- 🎨 **Custom CSS styling** with shadows, rounded cards, and color themes
-- 🌐 **Language & account panel** with localization elements and cart icon
-- 🛍️ **Promotional info cards** for free delivery & online shopping
-- 🔍 **Search bar** for smooth product filtering
-- 🍑 **Product showcase panel** with quantity controls, previews, and add-to-cart logic
-- 🧱 **Reusable fruit item cards** with bound data from controller
-- 🔄 **Dynamic FXML loading** (e.g. `ItemController.java`) for modular item injection
-- ⚙️ **Java modular structure** supported via `module-info.java`
+- 💡 **JavaFX-powered UI** for native responsiveness and smooth interaction
+- 🎨 **Custom CSS styling** with reusable classes, shadows, radius, and vibrant color themes
+- 🧱 **Fully dynamic fruit card grid** generated via `FXMLLoader` and injected at runtime
+- 🖼️ **Interactive fruit selection** updates the preview card with matching price, name, image, and custom background
+- 🌐 **Localized header bar** with language support, account panel, and cart icon
+- 🛍️ **Promotional panels** advertising free delivery and same-day shopping
+- 🔍 **Modern search bar UI (non-functional placeholder for now)**
+- 🧭 **MVC architecture** using FXML, Controllers, and POJO data models
+- ⚙️ **Java module system** via `module-info.java` for clean project structure
 
 ---
 
 ## 🧱 Component Overview
 
 ```
-market.fxml            → Main layout, language switcher, account, delivery banners  
-item.fxml              → Reusable card for product name, price, image (Kiwi, Cherry, etc.)  
-MarketController.java  → Populates fruit grid, sets selection styling  
-ItemController.java    → Binds dynamic card data (name, price, image) via @FXML  
-style.css              → Unified styling: cards, layout, color palette  
+market.fxml            → Master layout: header, banners, grid, side panel  
+item.fxml              → Reusable fruit card for product grid  
+MarketController.java  → Loads items dynamically, updates preview card  
+ItemController.java    → Binds `Fruit` model to each card’s UI  
+Fruit.java             → Plain data model with name, price, imageSrc, and hex color  
+style.css              → Custom styling for layout components  
 ```
 
 ---
 
-## 📂 Project Structure
+## 🍉 Supported Fruits
+
+| Name        | Image                        | Hex Color |
+|-------------|------------------------------|-----------|
+| Kiwi        | `/img/kiwi.png`              | `#6A7324` |
+| Coconut     | `/img/coconut.png`           | `#A7745B` |
+| Grapes      | `/img/grapes.png`            | `#291036` |
+| Watermelon  | `/img/watermelon.png`        | `#F85D03` |
+| Orange      | `/img/orange.png`            | `#22371D` |
+| Strawberry  | `/img/strawberry.png`        | `#88080C` |
+| Mango       | `/img/mango.png`             | `#FF8605` |
+| Cherry      | `/img/cherry.png`            | `#5F060E` |
+| Banana      | `/img/banana.png`            | `#E7C00F` |
+
+---
+
+## 📂 Folder Structure
 
 ```
 fruits_market_app/
@@ -50,8 +67,14 @@ fruits_market_app/
 │   │   └── style.css
 │   └── img/
 │       ├── kiwi.png
+│       ├── coconut.png
+│       ├── grapes.png
+│       ├── watermelon.png
+│       ├── orange.png
+│       ├── strawberry.png
+│       ├── mango.png
 │       ├── cherry.png
-│       ├── peach.png
+│       ├── banana.png
 │       ├── ic_cart.png
 │       ├── ic_delivery.png
 │       └── ic_stopwatch.png
@@ -60,30 +83,16 @@ fruits_market_app/
 
 ---
 
-## 🛠️ Tech Stack
-
-- [JavaFX 17](https://openjfx.io/) – modern GUI framework
-- FXML – XML-based UI layout
-- Java 17 – modular application support
-- CSS – responsive, custom styling
-- IntelliJ IDEA / CLion – recommended development environments
-
----
-
 ## 💼 Powered by NURO
 
-This project is part of **NURO** — a creative suite by Nzabanita focused on building futuristic, minimalist digital experiences with style and precision.
+This project is part of **NURO** — a creative suite envisioned by Nzabanita, focused on building futuristic, minimalist digital experiences with style and precision.
 
 > ✨ NURO blends elegant branding with functional software design.
 
 ---
 
 ## 📸 Preview
-
-> _Design showcase coming soon!_
-
-<!-- Uncomment this line when preview image is added -->
-<!-- ![FruityMart Preview](resources/img/screen1.png) -->
+> _Coming soon: App screenshots with preview card, fruit grid, and themed UI._
 
 ---
 
